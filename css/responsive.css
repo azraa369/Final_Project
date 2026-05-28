@@ -126,7 +126,9 @@
   .contact-info-card,
   .content-block,
   .contact-form,
-  .support-note {
+  .support-note,
+  .draft-note,
+  .privacy-card {
     padding: 1.35rem;
   }
 

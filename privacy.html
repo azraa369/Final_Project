@@ -33,21 +33,97 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <p class="section-kicker">Gizlilik</p>
-          <h1>Gizlilik politikası</h1>
-          <p class="section-placeholder">Politika metni daha sonra eklenecek.</p>
+          <p class="section-kicker">GİZLİLİK</p>
+          <h1>Gizlilik ve KVKK Bilgilendirmesi</h1>
+          <p class="lead-text">Bu sayfa, iletişim formu üzerinden paylaşılabilecek kişisel veriler ve bu verilerin kullanım amacı hakkında genel bilgilendirme sunar.</p>
+          <div class="draft-note" role="note">
+            <p>Bu metin bilgilendirme amaçlı bir taslaktır. Yayınlanmadan önce site sahibi tarafından gözden geçirilmeli ve gerekli durumlarda hukuki danışmanlık alınmalıdır.</p>
+          </div>
         </div>
       </section>
 
-      <section class="content-section">
+      <section class="content-section privacy-content-section" aria-labelledby="privacy-content-title">
         <div class="container narrow-container">
-          <div class="content-block">
-            <h2>Veri İşleme</h2>
-            <p>Placeholder içerik alanı.</p>
+          <div class="section-heading">
+            <p class="section-kicker">Bilgilendirme</p>
+            <h2 id="privacy-content-title">Kişisel veri işleme taslağı</h2>
+            <p>Aşağıdaki açıklamalar, statik web sitesi ve iletişim formu yapısı dikkate alınarak hazırlanmış genel bir taslak niteliğindedir.</p>
           </div>
-          <div class="content-block">
-            <h2>İletişim ve Haklar</h2>
-            <p>Placeholder içerik alanı.</p>
+
+          <article class="privacy-card" aria-labelledby="data-collected-title">
+            <h3 id="data-collected-title">Toplanabilecek veriler</h3>
+            <p>İletişim formu kullanıldığında aşağıdaki bilgiler ziyaretçi tarafından gönüllü olarak paylaşılabilir:</p>
+            <ul>
+              <li>Ad Soyad</li>
+              <li>E-posta</li>
+              <li>Telefon</li>
+              <li>Konu</li>
+              <li>Mesaj</li>
+            </ul>
+            <p>Ziyaretçilerin iletişim formu üzerinden özel sağlık bilgileri veya hassas kişisel veriler paylaşmaması önerilir.</p>
+          </article>
+
+          <article class="privacy-card" aria-labelledby="purpose-title">
+            <h3 id="purpose-title">Kullanım amaçları</h3>
+            <p>Paylaşılan bilgiler aşağıdaki amaçlarla kullanılabilir:</p>
+            <ul>
+              <li>İletişim taleplerine dönüş yapmak</li>
+              <li>Ön görüşme veya randevu iletişimini planlamak</li>
+              <li>Danışmanlık hizmetleri hakkında genel bilgi sağlamak</li>
+            </ul>
+          </article>
+
+          <article class="privacy-card" aria-labelledby="storage-title">
+            <h3 id="storage-title">Veri saklama ve güvenlik</h3>
+            <p>Bu web sitesi statik yapıda hazırlanmıştır ve kendi içinde bir veritabanında veri saklamaz. Form gönderimleri ileride Web3Forms, Formspree veya benzeri bir form sağlayıcı üzerinden danışmanın e-posta adresine iletilebilir.</p>
+            <p>Yayın ortamında HTTPS kullanılması ve iletişim kanallarına erişimin yalnızca site sahibiyle sınırlı tutulması önerilir.</p>
+          </article>
+
+          <article class="privacy-card" aria-labelledby="third-party-title">
+            <h3 id="third-party-title">Üçüncü taraf hizmetler</h3>
+            <p>Site yayına alındığında veya ileride geliştirildiğinde aşağıdaki üçüncü taraf hizmetler kullanılabilir:</p>
+            <ul>
+              <li>Form gönderim sağlayıcısı</li>
+              <li>Hosting sağlayıcısı</li>
+              <li>İleride eklenirse analiz aracı</li>
+            </ul>
+            <p>Kullanılan her hizmetin gizlilik koşulları site sahibi tarafından ayrıca değerlendirilmelidir.</p>
+          </article>
+
+          <article class="privacy-card" aria-labelledby="rights-title">
+            <h3 id="rights-title">Ziyaretçi hakları</h3>
+            <p>Ziyaretçiler, geçerli mevzuat kapsamında aşağıdaki konularda talepte bulunabilir:</p>
+            <ul>
+              <li>Kişisel verileri hakkında bilgi alma</li>
+              <li>Yanlış veya eksik bilgilerin düzeltilmesini isteme</li>
+              <li>Verilerinin silinmesini talep etme</li>
+              <li>Uygulanabilir olduğu durumlarda onayı geri çekme</li>
+            </ul>
+          </article>
+
+          <article class="privacy-card" aria-labelledby="privacy-contact-title">
+            <h3 id="privacy-contact-title">İletişim</h3>
+            <p>Gizlilik ve KVKK kapsamındaki talepler için aşağıdaki iletişim bilgileri kullanılabilir:</p>
+            <address class="privacy-contact">
+              <span>E-posta: [E-posta adresi]</span>
+              <span>Telefon: [Telefon]</span>
+            </address>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="privacy-cta-title">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <p class="section-kicker">Devam</p>
+              <h2 id="privacy-cta-title">Gizlilikle ilgili sorularınızı iletebilirsiniz</h2>
+              <p>Kişisel veri ve iletişim süreci hakkında bilgi almak için iletişim sayfasını kullanabilirsiniz.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="contact.html">İletişime Geç</a>
+              <a class="btn btn-outline-light" href="index.html">Ana Sayfaya Dön</a>
+            </div>
           </div>
         </div>
       </section>
@@ -58,9 +134,11 @@
         <div class="footer-grid">
           <div>
             <a class="footer-brand" href="index.html">PDR Danışmanlık</a>
-            <p>Profesyonel web sitesi yapısı.</p>
+            <p>Psikolojik danışmanlık ve PDR hizmetleri için profesyonel web sitesi.</p>
           </div>
           <nav aria-label="Alt menü">
+            <a href="about.html">Hakkında</a>
+            <a href="services.html">Hizmetler</a>
             <a href="privacy.html">Gizlilik Politikası</a>
             <a href="contact.html">İletişim</a>
           </nav>
