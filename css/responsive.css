@@ -24,6 +24,30 @@
   .content-section {
     padding: 3.5rem 0;
   }
+
+  .hero-layout,
+  .split-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-visual {
+    max-width: 520px;
+  }
+
+  .image-placeholder {
+    min-height: 320px;
+  }
+
+  .service-grid,
+  .process-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -48,12 +72,38 @@
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .service-grid,
+  .process-list {
+    grid-template-columns: 1fr;
+  }
+
+  .small-image-placeholder {
+    min-height: 220px;
+  }
+
+  .cta-panel {
+    padding: 2rem;
+  }
+
+  .cta-panel .btn-primary {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
   .info-card,
+  .service-card,
   .content-block,
   .contact-form {
     padding: 1.2rem;
+  }
+
+  .hero-section {
+    padding-top: 3rem;
+  }
+
+  .image-placeholder {
+    min-height: 260px;
   }
 }
