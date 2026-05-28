@@ -117,8 +117,17 @@
   .detail-card,
   .principle-card,
   .content-block,
-  .contact-form {
+  .contact-form,
+  .support-note {
     padding: 1.35rem;
+  }
+
+  .faq-question {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .faq-panel {
+    padding: 0 1.2rem 1.2rem;
   }
 
   .hero-section {

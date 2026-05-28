@@ -5,6 +5,7 @@
   var navLinks = document.querySelectorAll(".nav-link");
   var menuToggle = document.querySelector(".site-menu-toggle");
   var primaryNav = document.getElementById("primaryNav");
+  var accordions = document.querySelectorAll("[data-accordion]");
 
   navLinks.forEach(function (link) {
     var linkPage = link.getAttribute("href");
@@ -32,4 +33,32 @@
       });
     });
   }
+
+  accordions.forEach(function (accordion) {
+    var buttons = accordion.querySelectorAll(".faq-question");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var panelId = button.getAttribute("aria-controls");
+        var panel = document.getElementById(panelId);
+        var isOpen = button.getAttribute("aria-expanded") === "true";
+
+        buttons.forEach(function (otherButton) {
+          var otherPanelId = otherButton.getAttribute("aria-controls");
+          var otherPanel = document.getElementById(otherPanelId);
+
+          otherButton.setAttribute("aria-expanded", "false");
+
+          if (otherPanel) {
+            otherPanel.hidden = true;
+          }
+        });
+
+        if (panel && !isOpen) {
+          button.setAttribute("aria-expanded", "true");
+          panel.hidden = false;
+        }
+      });
+    });
+  });
 })();

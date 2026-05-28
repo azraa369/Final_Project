@@ -563,13 +563,76 @@ p {
   margin-top: 1.25rem;
 }
 
-.faq-list {
+.faq-list,
+.faq-accordion {
   display: grid;
   gap: 1rem;
 }
 
-.accordion-item {
+.accordion-item,
+.faq-item {
   overflow: hidden;
+}
+
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item h3 {
+  margin: 0;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 750;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+}
+
+.faq-question::after {
+  flex: 0 0 auto;
+  color: var(--color-primary-dark);
+  content: "+";
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-left: var(--space-4);
+}
+
+.faq-question[aria-expanded="true"] {
+  color: var(--color-primary-dark);
+}
+
+.faq-question[aria-expanded="true"]::after {
+  content: "−";
+}
+
+.faq-panel {
+  border-top: 1px solid var(--color-border);
+  padding: 0 1.5rem 1.5rem;
+}
+
+.faq-panel p {
+  margin: 1rem 0 0;
+}
+
+.support-note {
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-6);
 }
 
 .accordion-button {
