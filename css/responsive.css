@@ -1,6 +1,6 @@
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    border-top: 1px solid rgba(79, 111, 82, 0.12);
+    border-top: 1px solid var(--color-border);
     margin-top: 0.75rem;
     padding-top: 0.75rem;
   }
@@ -26,7 +26,8 @@
   }
 
   .hero-layout,
-  .split-layout {
+  .split-layout,
+  .profile-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -36,10 +37,12 @@
   }
 
   .image-placeholder {
-    min-height: 320px;
+    min-height: 340px;
   }
 
   .service-grid,
+  .education-grid,
+  .principles-grid,
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -74,6 +77,8 @@
   }
 
   .service-grid,
+  .education-grid,
+  .principles-grid,
   .process-list {
     grid-template-columns: 1fr;
   }
@@ -89,14 +94,24 @@
   .cta-panel .btn-primary {
     width: 100%;
   }
+
+  .cta-actions {
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
   .info-card,
   .service-card,
+  .detail-card,
+  .principle-card,
   .content-block,
   .contact-form {
-    padding: 1.2rem;
+    padding: 1.35rem;
   }
 
   .hero-section {
@@ -105,5 +120,9 @@
 
   .image-placeholder {
     min-height: 260px;
+  }
+
+  .profile-image-placeholder {
+    min-height: 300px;
   }
 }
