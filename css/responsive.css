@@ -41,10 +41,16 @@
   }
 
   .service-grid,
+  .services-page-grid,
   .education-grid,
   .principles-grid,
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .faq-preview-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .cta-panel {
@@ -77,6 +83,7 @@
   }
 
   .service-grid,
+  .services-page-grid,
   .education-grid,
   .principles-grid,
   .process-list {
