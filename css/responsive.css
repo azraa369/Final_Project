@@ -27,7 +27,8 @@
 
   .hero-layout,
   .split-layout,
-  .profile-layout {
+  .profile-layout,
+  .contact-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -42,6 +43,7 @@
 
   .service-grid,
   .services-page-grid,
+  .contact-info-grid,
   .education-grid,
   .principles-grid,
   .process-list {
@@ -84,9 +86,14 @@
 
   .service-grid,
   .services-page-grid,
+  .contact-info-grid,
   .education-grid,
   .principles-grid,
   .process-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
@@ -116,6 +123,7 @@
   .service-card,
   .detail-card,
   .principle-card,
+  .contact-info-card,
   .content-block,
   .contact-form,
   .support-note {
@@ -140,5 +148,9 @@
 
   .profile-image-placeholder {
     min-height: 300px;
+  }
+
+  .map-placeholder {
+    min-height: 260px;
   }
 }

@@ -33,42 +33,116 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <p class="section-kicker">İletişim</p>
-          <h1>Randevu ve iletişim bilgileri</h1>
-          <p class="section-placeholder">İletişim detayları daha sonra eklenecek.</p>
+          <p class="section-kicker">İLETİŞİM</p>
+          <h1>İletişime Geçin</h1>
+          <p class="lead-text">Danışmanlık süreci, randevu seçenekleri ve hizmet kapsamı hakkında bilgi almak için güvenli ve sade iletişim alanını kullanabilirsiniz.</p>
         </div>
       </section>
 
-      <section class="content-section">
+      <section class="content-section contact-info-section" aria-labelledby="contact-info-title">
         <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-5">
-              <div class="content-block">
-                <h2>İletişim Bilgileri</h2>
-                <p>Placeholder içerik alanı.</p>
+          <div class="section-heading">
+            <p class="section-kicker">Bilgiler</p>
+            <h2 id="contact-info-title">İletişim bilgileri</h2>
+            <p>Gerçek iletişim detayları ve çalışma düzeni daha sonra güncellenecektir.</p>
+          </div>
+          <div class="card-grid contact-info-grid">
+            <article class="contact-info-card">
+              <h3>Telefon</h3>
+              <p>[Telefon bilgisi eklenecek]</p>
+            </article>
+            <article class="contact-info-card">
+              <h3>E-posta</h3>
+              <p>[E-posta adresi eklenecek]</p>
+            </article>
+            <article class="contact-info-card">
+              <h3>Adres</h3>
+              <p>[Adres bilgisi eklenecek]</p>
+            </article>
+            <article class="contact-info-card">
+              <h3>Çalışma saatleri</h3>
+              <p>[Çalışma saatleri eklenecek]</p>
+            </article>
+            <article class="contact-info-card">
+              <h3>Online danışmanlık</h3>
+              <p>Online görüşme uygunluğu ön değerlendirme sonrası netleştirilebilir.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section contact-form-section" aria-labelledby="contact-form-title">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="section-copy">
+              <p class="section-kicker">Form</p>
+              <h2 id="contact-form-title">Mesaj gönderin</h2>
+              <p>Form üzerinden yalnızca randevu ve genel bilgilendirme taleplerinizi paylaşmanız önerilir.</p>
+              <div class="privacy-note" role="note">
+                <p>Lütfen bu form üzerinden özel sağlık bilgilerinizi paylaşmayınız.</p>
               </div>
             </div>
-            <div class="col-lg-7">
-              <form class="contact-form" action="#" method="post">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="name">Ad Soyad</label>
-                    <input class="form-control" id="name" name="name" type="text" autocomplete="name">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="email">E-posta</label>
-                    <input class="form-control" id="email" name="email" type="email" autocomplete="email">
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label" for="message">Mesaj</label>
-                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Gönder</button>
+
+            <!-- Future integration: replace action with Web3Forms/Formspree endpoint. Do not add secret/API keys to this file. -->
+            <form class="contact-form" action="#" method="post">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label class="form-label" for="name">Ad Soyad <span aria-hidden="true">*</span></label>
+                  <input class="form-control" id="name" name="name" type="text" autocomplete="name" placeholder="Adınız ve soyadınız" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="email">E-posta <span aria-hidden="true">*</span></label>
+                  <input class="form-control" id="email" name="email" type="email" autocomplete="email" placeholder="ornek@eposta.com" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="phone">Telefon</label>
+                  <input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Telefon numaranız">
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="subject">Konu <span aria-hidden="true">*</span></label>
+                  <input class="form-control" id="subject" name="subject" type="text" placeholder="Randevu veya bilgi talebi" required>
+                </div>
+                <div class="form-field form-field-full">
+                  <label class="form-label" for="message">Mesaj <span aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="6" placeholder="Kısa mesajınızı yazınız" required></textarea>
+                </div>
+                <div class="form-field form-field-full">
+                  <div class="form-check consent-check">
+                    <input class="form-check-input" id="privacyConsent" name="privacyConsent" type="checkbox" required>
+                    <label class="form-check-label" for="privacyConsent">KVKK ve gizlilik bilgilendirmesini okudum, iletişim amacıyla tarafıma dönüş yapılmasını kabul ediyorum.</label>
                   </div>
                 </div>
-              </form>
+                <div class="form-field form-field-full">
+                  <button class="btn btn-primary" type="submit">Mesaj Gönder</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section map-section" aria-labelledby="map-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Konum</p>
+            <h2 id="map-title">Harita alanı</h2>
+            <p>Gerçek adres bilgileri doğrulandıktan sonra harita entegrasyonu eklenebilir.</p>
+          </div>
+          <div class="map-placeholder" role="img" aria-label="Harita yer tutucu alanı. Gerçek harita daha sonra eklenecek.">
+            <span>Harita Yer Tutucu</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="contact-support-title">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <p class="section-kicker">Destek</p>
+              <h2 id="contact-support-title">İlk adım için sade bir iletişim yeterli</h2>
+              <p>Danışmanlık süreciyle ilgili sorularınızı paylaşabilir, uygun görüşme seçeneği hakkında bilgi alabilirsiniz.</p>
             </div>
+            <a class="btn btn-primary" href="services.html">Hizmetleri İncele</a>
           </div>
         </div>
       </section>
@@ -79,9 +153,11 @@
         <div class="footer-grid">
           <div>
             <a class="footer-brand" href="index.html">PDR Danışmanlık</a>
-            <p>Profesyonel web sitesi yapısı.</p>
+            <p>Psikolojik danışmanlık ve PDR hizmetleri için profesyonel web sitesi.</p>
           </div>
           <nav aria-label="Alt menü">
+            <a href="about.html">Hakkında</a>
+            <a href="services.html">Hizmetler</a>
             <a href="privacy.html">Gizlilik Politikası</a>
             <a href="contact.html">İletişim</a>
           </nav>
