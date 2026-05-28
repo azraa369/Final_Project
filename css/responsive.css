@@ -1,0 +1,59 @@
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    border-top: 1px solid rgba(79, 111, 82, 0.12);
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .nav-link {
+    padding: 0.7rem 0 !important;
+  }
+
+  .nav-link.active::after {
+    right: auto;
+    bottom: 0.45rem;
+    left: 0;
+    width: 2.5rem;
+  }
+
+  .hero-section,
+  .page-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .content-section {
+    padding: 3.5rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --space-section: 3rem;
+  }
+
+  .navbar {
+    min-height: 68px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .footer-grid {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .info-card,
+  .content-block,
+  .contact-form {
+    padding: 1.2rem;
+  }
+}
