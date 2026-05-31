@@ -1596,3 +1596,68 @@ html:root[data-theme="dark"] .faq-question[aria-expanded="true"] {
 html:root[data-theme="dark"] .content-block h3 {
   color: #14302C;
 }
+
+/* =========================
+   LANGUAGE SWITCHER
+   ========================= */
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.18rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: rgba(47, 111, 104, 0.08);
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
+
+.language-switcher__button {
+  min-width: 2.25rem;
+  min-height: 1.75rem;
+  padding: 0.35rem 0.65rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.language-switcher__button.is-active {
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+.language-switcher__button:hover {
+  color: var(--color-primary);
+}
+
+.language-switcher__button:focus-visible {
+  outline: 3px solid rgba(47, 111, 104, 0.28);
+  outline-offset: 2px;
+}
+
+:root[data-theme="dark"] .language-switcher {
+  background: rgba(158, 216, 207, 0.1);
+  border-color: rgba(244, 250, 248, 0.22);
+}
+
+:root[data-theme="dark"] .language-switcher__button {
+  color: var(--color-text-muted);
+}
+
+:root[data-theme="dark"] .language-switcher__button.is-active {
+  background: var(--color-primary);
+  color: #0F1F1D;
+}
+
+:root[data-theme="dark"] .language-switcher__button:hover {
+  color: var(--color-primary);
+}

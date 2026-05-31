@@ -26,12 +26,16 @@
           </button>
           <div class="collapse navbar-collapse" id="primaryNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Hakkında</a></li>
-              <li class="nav-item"><a class="nav-link" href="services.html">Hizmetler</a></li>
-              <li class="nav-item"><a class="nav-link" href="faq.html">SSS</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Hakkında</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+              <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav.faq">SSS</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
             </ul>
+            <div class="language-switcher" aria-label="Dil seçimi">
+              <button class="language-switcher__button is-active" type="button" data-lang-switch="tr" aria-pressed="true">TR</button>
+              <button class="language-switcher__button" type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+            </div>
             <button class="theme-toggle" type="button" aria-label="Koyu modu aç" aria-pressed="false">
               <span class="theme-toggle__icon" aria-hidden="true">☾</span>
             </button>
@@ -43,9 +47,9 @@
     <main>
       <section class="page-hero about-hero">
         <div class="container">
-              <p class="section-kicker">Hakkında</p>
-              <h1>İsmail Samet Kasap</h1>
-              <p class="lead-text">Psikolojik danışman — bireysel danışmanlık, eğitim koçluğu ve kişisel gelişim odaklı çalışmalar yürütmektedir.</p>
+              <p class="section-kicker" data-i18n="aboutHero.kicker">Hakkında</p>
+              <h1 data-i18n="aboutHero.title">İsmail Samet Kasap</h1>
+              <p class="lead-text" data-i18n="aboutHero.description">Psikolojik danışman — bireysel danışmanlık, eğitim koçluğu ve kişisel gelişim odaklı çalışmalar yürütmektedir.</p>
         </div>
       </section>
 
@@ -53,13 +57,13 @@
         <div class="container">
           <div class="profile-layout">
             <div class="profile-image-placeholder" data-reveal role="img" aria-label="Danışman profil fotoğrafı daha sonra eklenecek.">
-              <span>Profil Fotoğrafı</span>
+              <span data-i18n="aboutProfile.imagePlaceholder">Profil Fotoğrafı</span>
             </div>
             <div class="profile-summary" data-reveal data-reveal-delay="100">
-              <p class="section-kicker">Profil</p>
-              <h2 id="profile-overview-title">İsmail Samet Kasap</h2>
-              <p class="profile-role">Psikolojik Danışman</p>
-              <p>Online ve yüz yüze danışmanlık hizmetleri sunan psikolojik danışman. Bireysel danışmanlık, eğitim koçluğu, tercih danışmanlığı ve kişisel gelişim odaklı çalışmalar yürütmektedir. Arifiye Mahallesi, Odunpazarı / Eskişehir merkezli hizmet vermektedir.</p>
+              <p class="section-kicker" data-i18n="aboutProfile.kicker">Profil</p>
+              <h2 id="profile-overview-title" data-i18n="aboutProfile.title">İsmail Samet Kasap</h2>
+              <p class="profile-role" data-i18n="aboutProfile.role">Psikolojik Danışman</p>
+              <p data-i18n="aboutProfile.description">Online ve yüz yüze danışmanlık hizmetleri sunan psikolojik danışman. Bireysel danışmanlık, eğitim koçluğu, tercih danışmanlığı ve kişisel gelişim odaklı çalışmalar yürütmektedir. Arifiye Mahallesi, Odunpazarı / Eskişehir merkezli hizmet vermektedir.</p>
             </div>
           </div>
         </div>
@@ -68,26 +72,26 @@
       <section class="content-section education-section" aria-labelledby="education-title">
         <div class="container">
           <div class="section-heading" data-reveal>
-            <p class="section-kicker">Eğitim ve Deneyim</p>
-            <h2 id="education-title">Mesleki arka plan</h2>
-            <p>Psikolojik danışmanlık alanında eğitim, sertifika ve uygulama deneyimi.</p>
+            <p class="section-kicker" data-i18n="aboutEdu.kicker">Eğitim ve Deneyim</p>
+            <h2 id="education-title" data-i18n="aboutEdu.title">Mesleki arka plan</h2>
+            <p data-i18n="aboutEdu.description">Psikolojik danışmanlık alanında eğitim, sertifika ve uygulama deneyimi.</p>
           </div>
           <div class="card-grid education-grid">
             <article class="detail-card" data-reveal data-reveal-delay="100">
-              <h3>Lisans eğitimi</h3>
-              <p>Placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutEdu.card1Title">Lisans eğitimi</h3>
+              <p data-i18n="aboutEdu.card1Desc">Placeholder içerik alanı.</p>
             </article>
             <article class="detail-card" data-reveal data-reveal-delay="200">
-              <h3>Sertifikalar</h3>
-              <p>Placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutEdu.card2Title">Sertifikalar</h3>
+              <p data-i18n="aboutEdu.card2Desc">Placeholder içerik alanı.</p>
             </article>
             <article class="detail-card" data-reveal data-reveal-delay="300">
-              <h3>Mesleki deneyim</h3>
-              <p>Placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutEdu.card3Title">Mesleki deneyim</h3>
+              <p data-i18n="aboutEdu.card3Desc">Placeholder içerik alanı.</p>
             </article>
             <article class="detail-card" data-reveal data-reveal-delay="400">
-              <h3>Çalışma alanları</h3>
-              <p>Placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutEdu.card4Title">Çalışma alanları</h3>
+              <p data-i18n="aboutEdu.card4Desc">Placeholder içerik alanı.</p>
             </article>
           </div>
         </div>
@@ -96,9 +100,9 @@
       <section class="content-section approach-section" aria-labelledby="approach-title">
         <div class="container">
           <div class="wide-copy" data-reveal>
-            <p class="section-kicker">Yaklaşım</p>
-            <h2 id="approach-title">Danışmanlık yaklaşımı</h2>
-            <p>Danışmanlık süreci; güvenli alan, gizlilik ve bireysel ihtiyaçlara uygun ilerleyen bir görüşme yapısı üzerine kurulur. Amaç, kişinin yaşadığı süreci daha iyi anlamasına, farkındalık geliştirmesine ve kendi kaynaklarını güçlendirmesine destek olmaktır.</p>
+            <p class="section-kicker" data-i18n="aboutApproach.kicker">Yaklaşım</p>
+            <h2 id="approach-title" data-i18n="aboutApproach.title">Danışmanlık yaklaşımı</h2>
+            <p data-i18n="aboutApproach.description">Danışmanlık süreci; güvenli alan, gizlilik ve bireysel ihtiyaçlara uygun ilerleyen bir görüşme yapısı üzerine kurulur. Amaç, kişinin yaşadığı süreci daha iyi anlamasına, farkındalık geliştirmesine ve kendi kaynaklarını güçlendirmesine destek olmaktır.</p>
           </div>
         </div>
       </section>
@@ -106,25 +110,25 @@
       <section class="content-section principles-section" aria-labelledby="principles-title">
         <div class="container">
           <div class="section-heading" data-reveal>
-            <p class="section-kicker">İlkeler</p>
-            <h2 id="principles-title">Mesleki çalışma ilkeleri</h2>
+            <p class="section-kicker" data-i18n="aboutPrinciples.kicker">İlkeler</p>
+            <h2 id="principles-title" data-i18n="aboutPrinciples.title">Mesleki çalışma ilkeleri</h2>
           </div>
           <div class="card-grid principles-grid">
             <article class="principle-card" data-reveal data-reveal-delay="100">
-              <h3>Gizlilik</h3>
-              <p>Danışan bilgilerinin korunmasına yönelik ilke ve sınırlar bu alanda açıklanacak.</p>
+              <h3 data-i18n="aboutPrinciples.card1Title">Gizlilik</h3>
+              <p data-i18n="aboutPrinciples.card1Desc">Danışan bilgilerinin korunmasına yönelik ilke ve sınırlar bu alanda açıklanacak.</p>
             </article>
             <article class="principle-card" data-reveal data-reveal-delay="200">
-              <h3>Etik ilkelere bağlılık</h3>
-              <p>Mesleki etik çerçeveye bağlı çalışma yaklaşımı için placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutPrinciples.card2Title">Etik ilkelere bağlılık</h3>
+              <p data-i18n="aboutPrinciples.card2Desc">Mesleki etik çerçeveye bağlı çalışma yaklaşımı için placeholder içerik alanı.</p>
             </article>
             <article class="principle-card" data-reveal data-reveal-delay="300">
-              <h3>Saygılı iletişim</h3>
-              <p>Yargılayıcı olmayan ve saygılı iletişim yaklaşımı için placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutPrinciples.card3Title">Saygılı iletişim</h3>
+              <p data-i18n="aboutPrinciples.card3Desc">Yargılayıcı olmayan ve saygılı iletişim yaklaşımı için placeholder içerik alanı.</p>
             </article>
             <article class="principle-card" data-reveal data-reveal-delay="400">
-              <h3>Danışan merkezli yaklaşım</h3>
-              <p>Danışanın ihtiyaç ve hedeflerini merkeze alan süreç için placeholder içerik alanı.</p>
+              <h3 data-i18n="aboutPrinciples.card4Title">Danışan merkezli yaklaşım</h3>
+              <p data-i18n="aboutPrinciples.card4Desc">Danışanın ihtiyaç ve hedeflerini merkeze alan süreç için placeholder içerik alanı.</p>
             </article>
           </div>
         </div>
@@ -134,13 +138,13 @@
         <div class="container">
           <div class="cta-panel">
             <div data-reveal>
-              <p class="section-kicker">Randevu ve bilgi</p>
-              <h2 id="about-cta-title">Danışmanlık süreci hakkında iletişime geçin</h2>
-              <p>Görüşme seçenekleri, hizmet kapsamı ve uygun randevu bilgileri için iletişim sayfasını kullanabilirsiniz.</p>
+              <p class="section-kicker" data-i18n="aboutCta.kicker">Randevu ve bilgi</p>
+              <h2 id="about-cta-title" data-i18n="aboutCta.title">Danışmanlık süreci hakkında iletişime geçin</h2>
+              <p data-i18n="aboutCta.description">Görüşme seçenekleri, hizmet kapsamı ve uygun randevu bilgileri için iletişim sayfasını kullanabilirsiniz.</p>
             </div>
             <div class="cta-actions" data-reveal data-reveal-delay="100">
-              <a class="btn btn-primary" href="contact.html">İletişime Geç</a>
-              <a class="btn btn-outline-light" href="services.html">Hizmetleri Gör</a>
+              <a class="btn btn-primary" href="contact.html" data-i18n="aboutCta.button1">İletişime Geç</a>
+              <a class="btn btn-outline-light" href="services.html" data-i18n="aboutCta.button2">Hizmetleri Gör</a>
             </div>
           </div>
         </div>
@@ -152,8 +156,8 @@
         <div class="footer-grid">
           <div>
             <a class="footer-brand" href="index.html">İsmail Samet Kasap</a>
-            <p class="footer-title">Psikolojik Danışman</p>
-            <p>Online ve yüz yüze psikolojik danışmanlık hizmetleri.</p>
+            <p class="footer-title" data-i18n="footer.title">Psikolojik Danışman</p>
+            <p data-i18n="footer.tagline">Online ve yüz yüze psikolojik danışmanlık hizmetleri.</p>
             <div class="footer-contact">
               <a href="tel:+905362797508">0536 279 75 08</a>
               <a href="mailto:ismailsametkasap@gmail.com">ismailsametkasap@gmail.com</a>
@@ -164,10 +168,10 @@
             </div>
           </div>
           <nav aria-label="Alt menü">
-            <a href="about.html">Hakkında</a>
-            <a href="services.html">Hizmetler</a>
-            <a href="privacy.html">Gizlilik Politikası / KVKK</a>
-            <a href="contact.html">İletişim</a>
+            <a href="about.html" data-i18n="footer.about">Hakkında</a>
+            <a href="services.html" data-i18n="footer.services">Hizmetler</a>
+            <a href="privacy.html" data-i18n="footer.privacy">Gizlilik Politikası / KVKK</a>
+            <a href="contact.html" data-i18n="footer.contact">İletişim</a>
           </nav>
         </div>
       </div>
