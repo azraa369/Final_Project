@@ -16,13 +16,24 @@
     width: 2.5rem;
   }
 
-  .hero-section,
-  .page-hero {
+  .hero-section {
     padding: 4rem 0 3rem;
   }
 
+  .page-hero {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .section-quote {
+    padding: 2.5rem 0;
+  }
+
+  .section-quote blockquote p {
+    font-size: 1.2rem;
+  }
+
   .content-section {
-    padding: 3.5rem 0;
+    padding: 4rem 0;
   }
 
   .hero-layout,
@@ -37,8 +48,12 @@
     max-width: 520px;
   }
 
+  .hero-visual-card {
+    min-height: 360px;
+  }
+
   .image-placeholder {
-    min-height: 340px;
+    min-height: 360px;
   }
 
   .service-grid,
@@ -102,7 +117,7 @@
   }
 
   .cta-panel {
-    padding: 2rem;
+    padding: 2.2rem;
   }
 
   .cta-panel .btn-primary {
@@ -141,11 +156,23 @@
   }
 
   .hero-section {
-    padding-top: 3rem;
+    padding: 3rem 0 2rem;
+  }
+
+  .section-quote {
+    padding: 2rem 0;
+  }
+
+  .section-quote blockquote p {
+    font-size: 1.1rem;
+  }
+
+  .hero-visual-card {
+    min-height: 280px;
   }
 
   .image-placeholder {
-    min-height: 260px;
+    min-height: 280px;
   }
 
   .profile-image-placeholder {
