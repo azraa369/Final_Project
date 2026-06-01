@@ -165,39 +165,28 @@
   var icon = toggle.querySelector(".theme-toggle__icon");
   var STORAGE_KEY = "site-theme";
 
-  function getTheme() {
-    var saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return saved;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
-
   function applyTheme(theme) {
-    var isDark = theme === "dark";
-    if (isDark) {
+    if (theme === "dark") {
       htmlEl.setAttribute("data-theme", "dark");
+      if (icon) icon.textContent = "\u2600";
+      toggle.setAttribute("aria-label", "A\u00e7\u0131k modu a\u00e7");
+      toggle.setAttribute("aria-pressed", "true");
     } else {
       htmlEl.removeAttribute("data-theme");
+      if (icon) icon.textContent = "\u263E";
+      toggle.setAttribute("aria-label", "Koyu modu a\u00e7");
+      toggle.setAttribute("aria-pressed", "false");
     }
-    if (icon) {
-      icon.textContent = isDark ? "\u2600" : "\u263E";
-    }
-    toggle.setAttribute("aria-label", isDark ? "A\u00e7\u0131k modu a\u00e7" : "Koyu modu a\u00e7");
-    toggle.setAttribute("aria-pressed", String(isDark));
   }
 
-  applyTheme(getTheme());
+  var savedTheme = localStorage.getItem(STORAGE_KEY);
+  applyTheme(savedTheme === "dark" ? "dark" : "light");
 
   toggle.addEventListener("click", function () {
     var isDark = htmlEl.getAttribute("data-theme") === "dark";
     var next = isDark ? "light" : "dark";
     localStorage.setItem(STORAGE_KEY, next);
     applyTheme(next);
-  });
-
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
-    if (!localStorage.getItem(STORAGE_KEY)) {
-      applyTheme(e.matches ? "dark" : "light");
-    }
   });
 })();
 
