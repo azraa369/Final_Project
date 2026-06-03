@@ -552,7 +552,9 @@ li {
 .profile-image-placeholder {
   position: relative;
   display: grid;
-  min-height: 420px;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
   place-items: center;
   border: 0;
   border-radius: var(--radius-card);
