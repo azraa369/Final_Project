@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://api.web3forms.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://*.google.com https://*.gstatic.com; style-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://*.google.com https://*.googleusercontent.com https://*.gstatic.com; font-src 'self' data:; connect-src 'self' https://api.web3forms.com https://*.google.com https://*.gstatic.com; frame-src https://www.google.com https://www.google.com/maps/ https://maps.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
