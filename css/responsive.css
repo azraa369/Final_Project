@@ -49,7 +49,7 @@
   }
 
   .hero-visual-card {
-    min-height: 360px;
+    max-height: 420px;
   }
 
   .image-placeholder {
@@ -112,10 +112,6 @@
     grid-template-columns: 1fr;
   }
 
-  .small-image-placeholder {
-    min-height: 220px;
-  }
-
   .cta-panel {
     padding: 2.2rem;
   }
@@ -167,16 +163,14 @@
     font-size: 1.1rem;
   }
 
-  .hero-visual-card {
-    min-height: 280px;
-  }
-
   .image-placeholder {
     min-height: 280px;
   }
 
+  .small-image-placeholder,
   .profile-image-placeholder {
-    min-height: 300px;
+    max-width: 100%;
+    max-height: 420px;
   }
 
   .map-placeholder {
@@ -216,6 +210,6 @@
   }
 
   :root[data-theme="dark"] .hero-visual-card {
-    min-height: 220px !important;
+    max-height: 420px;
   }
 }
